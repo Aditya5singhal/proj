@@ -1,0 +1,42 @@
+<!DOCTYPE html> 
+<html lang="en" dir="ltr"> 
+    <head> 
+
+        <meta charset="utf-8" /> 
+        <title>Char Dham Yatra</title> 
+        <script src="https://aframe.io/releases/1.0.4/aframe.min.js"> </script>
+        <script src="https://unpkg.com/aframe-event-set-component@4.2.1/dist/aframe-event-set-component.min.js"> 
+        </script>
+
+        <script src="js/tour.js"></script>
+
+    </head>
+    <body>
+        <a-scene id="main-scene">
+            <!--sky-->
+            <a-sky id="main-container" color="#AED6F1" > 
+                
+            </a-sky>
+            <!--place holder-->
+            <a-entity id="place-container" tour></a-entity>
+            <!--camera-->
+            <a-camera id="camera" wasd-controls="enabled:false" > 
+
+            <!--app title-->
+
+                <a-entity 
+                    id="app-title"
+                    position="0 0.73 -1" 
+                    text="font:exo2bold; align:center; width:2.5; color:#CB4335; value:Welcome to the virtual tour ">
+                <a-entity 
+                    id="app-subtitle"
+                    position="0 -0.1 0" 
+                    text="font:dejavu; align:center; width:1.5; color:#CB4335; value:Let us take a tour"> 
+                </a-entity> 
+
+                 </a-entity>
+            </a-camera>
+        </a-scene>
+    </body>
+    
+</html>
